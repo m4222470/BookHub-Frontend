@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title_main">BookHub - وجهتك للكتب الرقمية</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">
+                    <i class="fas fa-book-reader"></i>
+                    <span>BookHub</span>
+                </a>
+
+                <nav id="main-nav">
+                    <ul>
+                        <li><a href="#" data-i18n="nav_home">الرئيسية</a></li>
+                        <li><a href="#" data-i18n="nav_explore">استكشاف الكتب</a></li>
+                        <li><a href="#" data-i18n="nav_categories">التصنيفات</a></li>
+                        <li><a href="#" data-i18n="nav_authors">المؤلفون</a></li>
+                        <li><a href="#authors-section" data-i18n="nav_publish">نشر كتاب</a></li>
+                        <li><a href="#" data-i18n="nav_about">من نحن</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <div class="language-switcher">
+                        <select id="language-selector" class="language-select">
+                            <option value="ar">العربية</option>
+                            <option value="en">English</option>
+                            <option value="fr">Français</option>
+                        </select>
+                    </div>
+
+                    <div class="search-box">
+                        <input type="text" data-i18n-placeholder="search_placeholder" placeholder="ابحث عن كتاب أو مؤلف...">
+                        <i class="fas fa-search"></i>
+                    </div>
+
+                    <button class="theme-toggle" id="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+
+                    <div class="auth-buttons">
+                        <button class="btn btn-outline" data-i18n="auth_login">تسجيل الدخول</button>
+                        <button class="btn btn-success" data-i18n="auth_start_free">
+                            <i class="fas fa-play-circle"></i>
+                            ابدأ مجانًا
+                        </button>
+                    </div>
+
+                    <button class="mobile-menu-btn" id="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 data-i18n="hero_heading">أضخم مكتبة رقمية عربية</h1>
+                <p data-i18n="hero_subtext">تضم آلاف الكتب المصوّرة والمسموعة في مكان واحد. اقرأ واشترِ وحمّل الكتب التي تحبها من أي جهاز وفي أي وقت.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-light" data-i18n="hero_read_now">
+                        <i class="fas fa-book-open"></i>
+                        ابدأ القراءة الآن
+                    </button>
+                    <button class="btn btn-transparent" id="watch-video-btn" data-i18n="hero_watch_video">
+                        <i class="fas fa-play-circle"></i>
+                        شاهد الفيديو التعريفي
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-section" id="video-section">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="video_title">اكتشف BookHub خلال 60 ثانية</h2>
+                <p data-i18n="video_subtext">شاهد كيف يمكنك الوصول إلى آلاف الكتب بلمسة واحدة</p>
+            </div>
+            <div class="video-container">
+                <div class="video-placeholder" id="video-placeholder">
+                    <i class="fas fa-play-circle"></i>
+                    <h3 data-i18n="video_placeholder_title">شاهد الفيديو التعريفي</h3>
+                    <p data-i18n="video_placeholder_duration">مدة الفيديو: 60 ثانية</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="offer">
+        <div class="container">
+            <div class="offer-content">
+                <div class="offer-badge" data-i18n="offer_badge">عرض حصري</div>
+                <h2 data-i18n="offer_title">🎁 احصل على أول 3 كتب مجانًا عند التسجيل الآن!</h2>
+                <p data-i18n="offer_subtext">انضم إلى آلاف القراء واستمتع بكتبك المفضلة بدون أي تكاليف</p>
+                <button class="btn btn-success" style="padding: 15px 30px; font-size: 1.1rem;" data-i18n="offer_button">
+                    <i class="fas fa-gift"></i>
+                    احصل على العرض الآن
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="features_title">لماذا تختار BookHub؟</h2>
+                <p data-i18n="features_subtext">نوفر لك تجربة قراءة فريدة تجمع بين الراحة والجودة والتنوع</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-book"></i></div>
+                    <h3 data-i18n="feature1_title">آلاف الكتب</h3>
+                    <p data-i18n="feature1_desc">مجموعة ضخمة من الكتب العربية والعالمية في مختلف المجالات والتخصصات، يتم تحديثها باستمرار</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3 data-i18n="feature2_title">متعدد المنصات</h3>
+                    <p data-i18n="feature2_desc">استمتع بالقراءة على هاتفك، حاسوبك أو جهازك اللوحي مع مزامنة تلقائية لتقدم القراءة</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-download"></i></div>
+                    <h3 data-i18n="feature3_title">قراءة دون اتصال</h3>
+                    <p data-i18n="feature3_desc">حمّل الكتب التي تشتريها واقرأها في أي وقت ومن أي مكان دون الحاجة إلى اتصال بالإنترنت</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-headphones"></i></div>
+                    <h3 data-i18n="feature4_title">كتب صوتية</h3>
+                    <p data-i18n="feature4_desc">استمع إلى كتبك المفضلة أثناء القيادة أو ممارسة الرياضة مع مجموعة متنامية من الكتب الصوتية</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-user-edit"></i></div>
+                    <h3 data-i18n="feature5_title">نشر كتابك</h3>
+                    <p data-i18n="feature5_desc">مكان مثالي للمؤلفين لنشر كتبهم والوصول إلى جمهور واسع مع حماية حقوق النشر</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-tags"></i></div>
+                    <h3 data-i18n="feature6_title">عروض حصرية</h3>
+                    <p data-i18n="feature6_desc">استفد من العروض والتخفيضات الدورية على مجموعة واسعة من الكتب والمحتوى المميز</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="books">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="books_latest_title">أحدث الإصدارات</h2>
+                <a href="#" class="view-all" data-i18n="books_view_all">عرض جميع الكتب <i class="fas fa-arrow-left"></i></a>
+            </div>
+
+            <div class="books-grid" id="latest-books-container">
+                </div>
+        </div>
+    </section>
+
+    <section class="courses-list">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="courses_title">دورات تدريبية وموارد تعليمية</h2>
+                <p data-i18n="courses_subtext">اكتشف أفضل الدورات والموارد في الأمن السيبراني وعلم البيانات.</p>
+            </div>
+            
+            <div class="books-grid" id="courses-container">
+                </div>
+            
+        </div>
+    </section>
+    
+    <section class="app-section" id="authors-section" style="background: linear-gradient(135deg, var(--secondary) 0%, #ff4d6d 100%);">
+        <div class="container">
+            <div class="app-content">
+                <div class="app-text">
+                    <h2 data-i18n="authors_heading">انشر كتابك وابدأ رحلة التأثير!</h2>
+                    <p data-i18n="authors_subtext">هل أنت مؤلف ولديك قصة لترويها؟ انضم إلى مجتمع BookHub للمؤلفين، وابدأ بنشر وبيع كتبك رقميًا بضغطة زر مع ضمان حماية حقوقك الفكرية.</p>
+                    <div class="app-buttons">
+                        <a href="#" class="app-btn" style="background: white; color: var(--secondary);">
+                            <i class="fas fa-pencil-alt"></i>
+                            <div class="app-btn-text">
+                                <span data-i18n="authors_btn1_line1">ابدأ النشر</span>
+                                <span data-i18n="authors_btn1_line2">انضم للمؤلفين الآن</span>
+                            </div>
+                        </a>
+                        <a href="#" class="app-btn">
+                            <i class="fas fa-chart-bar"></i>
+                            <div class="app-btn-text">
+                                <span data-i18n="authors_btn2_line1">اكتشف</span>
+                                <span data-i18n="authors_btn2_line2">برنامج الإيرادات</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="app-image">
+                    <div class="app-phone">
+                        <i class="fas fa-feather-alt" style="font-size: 250px; opacity: 0.8; color: white;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="categories">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="categories_title">تصفح حسب التصنيف</h2>
+                <p data-i18n="categories_subtext">اكتشف كتبك المفضلة من خلال التصنيفات المختلفة</p>
+            </div>
+
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon"><i class="fas fa-brain"></i></div>
+                    <div class="category-info">
+                        <h3 data-i18n="cat1_name">تطوير الذات</h3>
+                        <p data-i18n="cat1_count">125 كتاب</p>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon"><i class="fas fa-chart-line"></i></div>
+                    <div class="category-info">
+                        <h3 data-i18n="cat2_name">الأعمال والاقتصاد</h3>
+                        <p data-i18n="cat2_count">89 كتاب</p>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon"><i class="fas fa-heart"></i></div>
+                    <div class="category-info">
+                        <h3 data-i18n="cat3_name">الرومانسية</h3>
+                        <p data-i18n="cat3_count">67 كتاب</p>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon"><i class="fas fa-user-ninja"></i></div>
+                    <div class="category-info">
+                        <h3 data-i18n="cat4_name">الخيال العلمي</h3>
+                        <p data-i18n="cat4_count">142 كتاب</p>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon"><i class="fas fa-history"></i></div>
+                    <div class="category-info">
+                        <h3 data-i18n="cat5_name">التاريخ</h3>
+                        <p data-i18n="cat5_count">98 كتاب</p>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon"><i class="fas fa-stethoscope"></i></div>
+                    <div class="category-info">
+                        <h3 data-i18n="cat6_name">الصحة والطب</h3>
+                        <p data-i18n="cat6_count">76 كتاب</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="testimonials_title">آراء قرائنا</h2>
+                <p data-i18n="testimonials_subtext">ماذا يقول قراؤنا عن تجربتهم مع BookHub</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                    <p class="testimonial-text" data-i18n="testi1_text">موقع رائع جدًا! وجدت كل الكتب التي أبحث عنها بأسعار معقولة وتجربة قراءة مريحة للعين. خاصية القراءة دون اتصال مفيدة جدًا أثناء السفر.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><img src="https://i.pravatar.cc/150?img=32" alt="سارة أحمد"></div>
+                        <div class="author-info">
+                            <h4 data-i18n="testi1_name">سارة أحمد</h4>
+                            <p data-i18n="testi1_role">قارئة نشطة</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                    <p class="testimonial-text" data-i18n="testi2_text">التصميم جميل وسهل الاستخدام، وأحب خاصية التوصيات الذكية التي تعرف تفضيلاتي. فريق الدعم سريع الاستجابة ومفيد جدًا.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><img src="https://i.pravatar.cc/150?img=12" alt="محمد الخالد"></div>
+                        <div class="author-info">
+                            <h4 data-i18n="testi2_name">محمد الخالد</h4>
+                            <p data-i18n="testi2_role">مدون أدبي</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                    <p class="testimonial-text" data-i18n="testi3_text">تنوع الكتب رائع، خاصة في مجال تطوير الذات والأعمال. جودة الكتب المترجمة عالية، وأوصي بهذا الموقع لكل محبي القراءة.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><img src="https://i.pravatar.cc/150?img=44" alt="نورة السعدي"></div>
+                        <div class="author-info">
+                            <h4 data-i18n="testi3_name">نورة السعدي</h4>
+                            <p data-i18n="testi3_role">كاتبة ومحررة</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="app-section">
+        <div class="container">
+            <div class="app-content">
+                <div class="app-text">
+                    <h2 data-i18n="app_title">حمّل تطبيق BookHub الآن</h2>
+                    <p data-i18n="app_subtext">استمتع بتجربة قراءة مذهلة على هاتفك المحمول. اقرأ في أي وقت ومن أي مكان مع مزامنة تلقائية لكتبك وتقدم قراءتك.</p>
+                    <div class="app-buttons">
+                        <a href="#" class="app-btn">
+                            <i class="fab fa-google-play"></i>
+                            <div class="app-btn-text">
+                                <span data-i18n="app_google_line1">حمّله من</span>
+                                <span data-i18n="app_google_line2">Google Play</span>
+                            </div>
+                        </a>
+                        <a href="#" class="app-btn">
+                            <i class="fab fa-apple"></i>
+                            <div class="app-btn-text">
+                                <span data-i18n="app_apple_line1">حمّله من</span>
+                                <span data-i18n="app_apple_line2">App Store</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="app-image">
+                    <img src="https://i.ibb.co/68038Tf/phone-placeholder.png" alt="شاشة الهاتف" class="app-phone">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-i18n="cta_title">انضم إلى مجتمع BookHub اليوم</h2>
+                <p data-i18n="cta_subtext">اشترك الآن وابدأ رحلتك في عالم القراءة بدون حدود</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-light" data-i18n="cta_btn1">
+                        <i class="fas fa-user-plus"></i>
+                        إنشاء حساب مجاني
+                    </button>
+                    <button class="btn btn-transparent" data-i18n="cta_btn2">
+                        <i class="fas fa-crown"></i>
+                        تجربة Premium مجانية
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3 data-i18n="footer_about_title">عن BookHub</h3>
+                    <p data-i18n="footer_about_text">منصة رقمية شاملة تهدف إلى نشر المعرفة والثقافة من خلال توفير آلاف الكتب العربية والعالمية في مختلف المجالات.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3 data-i18n="footer_quick_links_title">روابط سريعة</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-i18n="nav_home"><i class="fas fa-chevron-left"></i> الرئيسية</a></li>
+                        <li><a href="#" data-i18n="footer_link_all_books"><i class="fas fa-chevron-left"></i> جميع الكتب</a></li>
+                        <li><a href="#" data-i18n="nav_categories"><i class="fas fa-chevron-left"></i> التصنيفات</a></li>
+                        <li><a href="#" data-i18n="nav_authors"><i class="fas fa-chevron-left"></i> المؤلفون</a></li>
+                        <li><a href="#authors-section" data-i18n="nav_publish"><i class="fas fa-chevron-left"></i> نشر كتاب</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 data-i18n="footer_help_title">المساعدة</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-i18n="footer_link_faq"><i class="fas fa-chevron-left"></i> الأسئلة الشائعة</a></li>
+                        <li><a href="#" data-i18n="footer_link_buy"><i class="fas fa-chevron-left"></i> كيفية الشراء</a></li>
+                        <li><a href="#" data-i18n="footer_link_payment"><i class="fas fa-chevron-left"></i> طرق الدفع</a></li>
+                        <li><a href="#" data-i18n="footer_link_privacy"><i class="fas fa-chevron-left"></i> سياسة الخصوصية</a></li>
+                        <li><a href="#" data-i18n="footer_link_contact"><i class="fas fa-chevron-left"></i> اتصل بنا</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 data-i18n="footer_newsletter_title">النشرة البريدية</h3>
+                    <p data-i18n="footer_newsletter_text">اشترك في نشرتنا البريدية لتصلك آخر الإصدارات والعروض الحصرية.</p>
+                    <div class="newsletter-form">
+                        <input type="email" data-i18n-placeholder="footer_email_placeholder" placeholder="بريدك الإلكتروني">
+                        <button class="btn btn-primary" style="width: 100%;" data-i18n="footer_newsletter_button">اشترك الآن</button>
+                    </div>
+
+                    <div class="payment-methods">
+                        <img src="https://via.placeholder.com/150x30?text=VISA" alt="Visa">
+                        <img src="https://via.placeholder.com/150x30?text=MasterCard" alt="MasterCard">
+                        <img src="https://via.placeholder.com/150x30?text=MADA" alt="Mada">
+                    </div>
+
+                    <div class="security-badge">
+                        <i class="fas fa-lock"></i>
+                        <span data-i18n="footer_security_text">مدفوعات آمنة مع تشفير SSL</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p data-i18n="footer_copyright">جميع الحقوق محفوظة &copy; 2023 BookHub - تم التصميم بحب للقراء</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
