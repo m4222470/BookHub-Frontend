@@ -1,0 +1,208 @@
+{
+  "latest_books": [
+    {
+      "id": 1,
+      "title_en": "The Four Agreements",
+      "title_ar": "الاتفاقيات الأربع",
+      "title_fr": "Les Quatre Accords Toltèques",
+      "author": "Don Miguel Ruiz",
+      "cover_url": "https://via.placeholder.com/200x300?text=Book1",
+      "category_en": "Self-Help",
+      "category_ar": "تطوير الذات",
+      "category_fr": "Développement personnel",
+      "rating": 4.7,
+      "price": 9.99,
+      "old_price": 14.99,
+      "badge": {
+        "key": "badge_bestseller"
+      }
+    },
+    {
+      "id": 2,
+      "title_en": "Atomic Habits",
+      "title_ar": "العادات الذرية",
+      "title_fr": "Un rien peut tout changer",
+      "author": "James Clear",
+      "cover_url": "https://via.placeholder.com/200x300?text=Book2",
+      "category_en": "Productivity",
+      "category_ar": "الإنتاجية",
+      "category_fr": "Productivité",
+      "rating": 4.9,
+      "price": 12.50,
+      "old_price": null,
+      "badge": {
+        "key": "badge_new"
+      }
+    },
+    {
+      "id": 3,
+      "title_en": "Sapiens: A Brief History of Humankind",
+      "title_ar": "العاقل: تاريخ موجز للجنس البشري",
+      "title_fr": "Sapiens : Une brève histoire de l'humanité",
+      "author": "Yuval Noah Harari",
+      "cover_url": "https://via.placeholder.com/200x300?text=Book3",
+      "category_en": "History",
+      "category_ar": "التاريخ",
+      "category_fr": "Histoire",
+      "rating": 4.6,
+      "price": 15.00,
+      "old_price": null,
+      "badge": null
+    },
+    {
+      "id": 4,
+      "title_en": "Deep Work",
+      "title_ar": "العمل العميق",
+      "title_fr": "Deep Work",
+      "author": "Cal Newport",
+      "cover_url": "https://via.placeholder.com/200x300?text=Book6",
+      "category_en": "Business",
+      "category_ar": "أعمال",
+      "category_fr": "Affaires",
+      "rating": 4.7,
+      "price": 10.99,
+      "old_price": null,
+      "badge": {
+        "key": "badge_bestseller"
+      }
+    },
+    {
+      "id": 5,
+      "title_en": "Cosmos",
+      "title_ar": "الكون",
+      "title_fr": "Cosmos",
+      "author": "Carl Sagan",
+      "cover_url": "https://via.placeholder.com/200x300?text=Book7",
+      "category_en": "Science",
+      "category_ar": "علوم",
+      "category_fr": "Science",
+      "rating": 4.5,
+      "price": 11.99,
+      "old_price": 17.99,
+      "badge": null
+    },
+    {
+      "id": 6,
+      "title_en": "The Power of Now",
+      "title_ar": "قوة الآن",
+      "title_fr": "Le Pouvoir du moment présent",
+      "author": "Eckhart Tolle",
+      "cover_url": "https://via.placeholder.com/200x300?text=Book8",
+      "category_en": "Spirituality",
+      "category_ar": "روحانيات",
+      "category_fr": "Spiritualité",
+      "rating": 4.6,
+      "price": 9.50,
+      "old_price": null,
+      "badge": {
+        "key": "badge_new"
+      }
+    }
+  ],
+  "educational_courses": [
+    {
+      "id": 101,
+      "title_ar": "Kali Linux Revealed",
+      "title_en": "Kali Linux Revealed",
+      "title_fr": "Kali Linux Révélé",
+      "description_ar": "دليل كامل لتعلم Kali Linux من الأساسيات إلى الاحتراف، مثالي لمحترفي الأمن السيبراني.",
+      "description_en": "A complete guide to learning Kali Linux from basics to mastery, perfect for cybersecurity professionals.",
+      "description_fr": "Guide complet pour apprendre Kali Linux des bases à la maîtrise, idéal pour les professionnels en cybersécurité.",
+      "url": "https://example.com/kali-linux-revealed",
+      "rating": 4.9,
+      "price": 0,
+      "isFree": true
+    },
+    {
+      "id": 102,
+      "title_ar": "إتقان Metasploit",
+      "title_en": "Mastering Metasploit",
+      "title_fr": "Maîtriser Metasploit",
+      "description_ar": "تعلم كيفية استغلال الثغرات الأمنية باستخدام إطار عمل Metasploit بأمثلة عملية وتمارين.",
+      "description_en": "Learn how to exploit vulnerabilities using the Metasploit Framework with practical examples and exercises.",
+      "description_fr": "Apprenez à exploiter les vulnérabilités avec Metasploit Framework à travers des exemples pratiques.",
+      "url": "https://example.com/mastering-metasploit",
+      "rating": 4.8,
+      "price": 25,
+      "isFree": false
+    },
+    {
+      "id": 103,
+      "title_ar": "Python للمخترقين الأخلاقيين",
+      "title_en": "Python for Hackers",
+      "title_fr": "Python pour les Hackers",
+      "description_ar": "تعلم كيفية بناء أدوات اختراق خاصة بك باستخدام بايثون مع أمثلة حقيقية لمنصة Kali Linux.",
+      "description_en": "Learn how to build your own hacking tools using Python with real examples for Kali Linux.",
+      "description_fr": "Apprenez à créer vos propres outils de piratage en Python avec des exemples concrets pour Kali Linux.",
+      "url": "https://example.com/python-for-hackers",
+      "rating": 4.7,
+      "price": 19,
+      "isFree": false
+    },
+    {
+      "id": 104,
+      "title_ar": "الأمن السيبراني وأساسياته",
+      "title_en": "Cybersecurity Fundamentals",
+      "title_fr": "Fondamentaux de la Cybersécurité",
+      "description_ar": "مقدمة شاملة لمفاهيم الأمن السيبراني وطرق الحماية الحديثة.",
+      "description_en": "Comprehensive introduction to cybersecurity concepts and modern protection methods.",
+      "description_fr": "Introduction complète aux concepts de cybersécurité et aux méthodes modernes de protection.",
+      "url": "https://example.com/cybersecurity-fundamentals",
+      "rating": 4.7,
+      "price": 18,
+      "isFree": false
+    },
+    {
+      "id": 105,
+      "title_ar": "تقنيات OSINT العملية",
+      "title_en": "Practical OSINT Techniques",
+      "title_fr": "Techniques OSINT Pratiques",
+      "description_ar": "تعلم جمع وتحليل معلومات المصادر المفتوحة باستخدام أدوات وطرق مجانية.",
+      "description_en": "Learn open-source intelligence collection and analysis using free tools and methods.",
+      "description_fr": "Apprenez à collecter et analyser des informations en sources ouvertes avec des outils gratuits.",
+      "url": "https://example.com/practical-osint",
+      "rating": 4.9,
+      "price": 0,
+      "isFree": true
+    },
+    {
+      "id": 106,
+      "title_ar": "أساسيات التعلم الآلي",
+      "title_en": "Machine Learning Basics",
+      "title_fr": "Bases du Machine Learning",
+      "description_ar": "مقدمة بسيطة لمفاهيم التعلم الآلي مع أمثلة قائمة على بايثون.",
+      "description_en": "Simple introduction to machine learning concepts with Python-based examples.",
+      "description_fr": "Introduction simple aux concepts de l’apprentissage automatique avec des exemples Python.",
+      "url": "https://example.com/machine-learning-basics",
+      "rating": 4.8,
+      "price": 0,
+      "isFree": true
+    },
+    {
+      "id": 107,
+      "title_ar": "الهندسة العكسية للمبتدئين",
+      "title_en": "Reverse Engineering for Beginners",
+      "title_fr": "Reverse Engineering pour Débutants",
+      "description_ar": "دليل عملي للهندسة العكسية للبرمجيات وتحليل الملفات الثنائية.",
+      "description_en": "Practical guide to software reverse engineering and binary analysis.",
+      "description_fr": "Guide pratique d’ingénierie inverse et d’analyse binaire de logiciels.",
+      "url": "https://example.com/reverse-engineering-beginners",
+      "rating": 4.9,
+      "price": 0,
+      "isFree": true
+    },
+    {
+      "id": 108,
+      "title_ar": "أساسيات اختبار الاختراق",
+      "title_en": "Penetration Testing Basics",
+      "title_fr": "Bases du Test de Pénétration",
+      "description_ar": "تعلم الخطوات الأساسية لاختبار الاختراق، من التخطيط إلى إعداد التقارير.",
+      "description_en": "Learn the essential steps of penetration testing, from planning to reporting.",
+      "description_fr": "Apprenez les étapes essentielles du pentest, de la planification au rapport.",
+      "url": "https://example.com/penetration-testing-basics",
+      "rating": 4.8,
+      "price": 0,
+      "isFree": true
+    }
+  ]
+}
